@@ -1,0 +1,30 @@
+#If else using strip function.
+# If number is odd print Weird.
+# If the number is even and in inclusive range of 2 and 5 print Not Weird.
+# If the number is even and inclusive range 6 and 20, print Weird.
+# If the number is even and greater than 20 print Not Weird 
+
+# Do not change this code
+#!/bin/python3
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+# The strip() method returns a copy of the string with both leading and trailing characters removed (based on the string argument passed).
+# The strip() removes characters from both left and right based on the argument (a string specifying the set of characters to be removed)
+    if n%2!=0:
+        print("Weird")
+    if n%2 ==0:
+        if n<=5 & n>=2:
+            print("Not Weird")
+        if n<=22 & n>=6:
+            print("Weird")
+        if n>20:
+            print("Not Weird")
